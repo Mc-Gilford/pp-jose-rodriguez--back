@@ -1,0 +1,3 @@
+C:\Users\chuch\Documents\GitHub\pp-jose-rodriguez--back\pp-jose-rodriguez--back\pp-jose-rodriguez--back\obj\Debug\pp-jose-rodriguez--back.njsprojAssemblyReference.cache
+C:\Users\chuch\Documents\GitHub\pp-jose-rodriguez--back\pp-jose-rodriguez--back\pp-jose-rodriguez--back\obj\Debug\pp-jose-rodriguez--back.njsproj.CoreCompileInputs.cache
+C:\Users\chuch\Documents\GitHub\pp-jose-rodriguez--back\pp-jose-rodriguez--back\pp-jose-rodriguez--back\bin\Microsoft.NodejsTools.WebRole.dll

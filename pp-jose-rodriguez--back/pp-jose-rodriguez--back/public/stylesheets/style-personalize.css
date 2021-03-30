@@ -1,0 +1,10 @@
+.shadow-box
+{
+    width:100%;
+}
+
+.shadow-box div
+{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
