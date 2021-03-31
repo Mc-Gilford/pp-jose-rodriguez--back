@@ -34,6 +34,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="public\javascripts\script.js" />
+    <Content Include="public\javascripts\task.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="public\stylesheets\style-personalize.css" />
     <Content Include="public\stylesheets\style.css" />
     <Content Include="public\vendor\bootstrap\js\bootstrap.bundle.js" />
@@ -1854,9 +1857,6 @@
     <Content Include="public\vendor\jquery\jquery.slim.js" />
     <Content Include="public\vendor\jquery\jquery.slim.min.js" />
     <Content Include="public\vendor\jquery\jquery.slim.min.map" />
-    <Content Include="routes\connectmongo.js">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="routes\index.js" />
     <Content Include="routes\users.js" />
     <Content Include="package.json" />

@@ -1,6 +1,7 @@
 'use strict';
 var debug = require('debug');
 var express = require('express');
+var mongoose = require('mongoose');
 var morgan = require('morgan');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -12,6 +13,12 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+//Conectando con la base de datos
+mongoose.connect('mongodb://localhost/pasatiempos')
+    .then(db => console.log("DB conectada"))
+    .catch(err => console.log(err));
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
