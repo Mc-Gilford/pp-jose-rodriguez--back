@@ -1,6 +1,7 @@
 'use strict';
 var debug = require('debug');
 var express = require('express');
+var morgan = require('morgan');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -26,6 +27,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+//Middleware
+app.use(morgan('dev'));
+app.use(express.urlencoded({ extended:false }));
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
