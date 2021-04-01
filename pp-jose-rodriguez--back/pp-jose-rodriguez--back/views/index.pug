@@ -37,18 +37,22 @@ block content
                 th Genero
                 th Pasatiempo
                 th Registro
+                th Operacion
              tbody
               each val in tasks
                 tr 
-                    th #{val.id}
-                    th #{val.nombre}
-                    th #{val.correo}
-                    th #{val.telefono}
-                    th #{val.password}
-                    th #{val.edad}
-                    th #{val.genero}
-                    th #{val.pasatiempo}
-                    th #{val.registro}
+                    td #{val._id}
+                    td #{val.nombre}
+                    td #{val.correo}
+                    td #{val.telefono}
+                    td #{val.password}
+                    td #{val.edad}
+                    td #{val.genero}
+                    td #{val.pasatiempo}
+                    td #{val.registro}
+                    td
+                        a(href="/delete/"+val._id class="btn btn-danger") Eliminar
+                        a(href="/edit/"+val._id class="btn btn-info") Edit
   script(src="vendor/jquery/jquery.min.js")
   script(src="vendor/bootstrap/js/bootstrap.bundle.min.js")
   script(src="vendor/jquery-easing/jquery.easing.min.js")

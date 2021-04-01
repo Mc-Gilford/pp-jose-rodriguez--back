@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  link(href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css")
+  link(href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet")
+  link(href="stylesheets/style.css" rel="stylesheet")
+  link(href="stylesheets/style-personalize.css" rel="stylesheet")
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  //pre= task
+  div(class="container")
+      form( action="/edit/"+task._id method="POST")
+        input(type="text" name="nombre" placeholder="Nombre" required value=task.nombre)
+        input(type="email" name="correo" placeholder="Email" required value=task.correo)
+        input(type="phone" name="telefono" placeholder="Phone" required minlength="10" maxlength="10" value=task.telefono)
+        input(type="password" name="password" placeholder="Password" required minlength="8" value=task.password)
+        input(type="text" name="edad" placeholder="Edad" required value=task.edad)
+        input(type="text" name="genero" placeholder="Genero" required value=task.genero)
+        input(type="text" name="pasatiempo" placeholder="Pasatiempo" required value=task.pasatiempo)
+        input(type="date" name="registro" placeholder="Fecha de Registro" required value=task.registro)
+        div(class ="div-btn")
+            input(class="btn-primary btn" type="submit" value="Actualizar" )
+      img(src='images/react.png')
+  script(src="vendor/jquery/jquery.min.js")
+  script(src="vendor/bootstrap/js/bootstrap.bundle.min.js")
+  script(src="vendor/jquery-easing/jquery.easing.min.js")
+  script(src="vendor/datatables/jquery.dataTables.min.js")
+  script(src="vendor/datatables/dataTables.bootstrap4.min.js")
+  
+  script(src="javascripts/script.js")
+  script(src="javascripts/datatables.js")
+  script(src="javascripts/task.js")
