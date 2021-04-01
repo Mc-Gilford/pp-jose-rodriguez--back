@@ -6,7 +6,7 @@ block content
   link(href="stylesheets/style.css" rel="stylesheet")
   link(href="stylesheets/style-personalize.css" rel="stylesheet")
   link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
-  pre= tasks
+  //pre= tasks
   div(class="container")
       form( action="/add" method="POST")
         input(type="text" name="nombre" placeholder="Nombre" required)
@@ -28,130 +28,27 @@ block content
            table(class="table table-bordered" id="dataTable" width="100%" cellspacing="0")
              thead
               tr
-                th Name
-                th Position
-                th Office
-                th Age
-                th Start date
-                th Salary
+                th ID
+                th Nombre
+                th Correo
+                th Telefono
+                th Password
+                th Edad
+                th Genero
+                th Pasatiempo
+                th Registro
              tbody
-              tr
-                td Tiger Nixon
-                td System Architect
-                td Edinburgh
-                td 61
-                td 
-                  i(class="fa fa-arrow-up text-success") $150,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-danger")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
-              tr
-                td Garrett Winters
-                td Accountant
-                td Tokyo
-                td 63
-                td 
-                 i(class="fa fa-arrow-up text-success") $250,000
-                td(class="text-center")
-                 i(class="fa fa-circle text-success")
+              each val in tasks
+                tr 
+                    th #{val.id}
+                    th #{val.nombre}
+                    th #{val.correo}
+                    th #{val.telefono}
+                    th #{val.password}
+                    th #{val.edad}
+                    th #{val.genero}
+                    th #{val.pasatiempo}
+                    th #{val.registro}
   script(src="vendor/jquery/jquery.min.js")
   script(src="vendor/bootstrap/js/bootstrap.bundle.min.js")
   script(src="vendor/jquery-easing/jquery.easing.min.js")
